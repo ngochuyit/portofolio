@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightdrink-js/1.4.0/css/lightdrink.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#target">Target</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Huy</span><br />from VietNam</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- target -->
+    <div id="target">
+        <div class="container">
+            <div class="row">
+                <div class="target-col-1">
+                    <img src="./images/ảnh 1.jpg" alt="">
+                </div>
+                <div class="target-col-2">
+                    <h1 class="sub-title">Target Me</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('short')">Short-term goals</p>
+                        <p class="tab-links" onclick="opentab('long')">Long-term goals</p>
+                        <!-- <p class="tab-links" onclick="opentab('education')">Education</p> -->
+                    </div>
+                    <!-- Short-term goals -->
+                    <div class="tab-contents active-tab" id="short">
+                        <ul>
+                            <li>with knowledge of Html, CSS, JavaScript and
+                                React, <br> I want to develop myself in my work and develop<br> 
+                                software with the skills that I have.</li>
+                            
+                        </ul>
+                    </div>
+
+                    <!-- Short-term goals -->
+                    <div class="tab-contents" id="long">
+                        <ul>
+                            <li>Hopefully, with my own efforts, after 5 years,
+                                I can <br> become an expert in the development of the front <br> and
+                                become one of the good group leaders and <br> can assist new
+                                programmers in the profession</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <div class="about-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Skill</h2>
+                    <p>Programming languages: Html, CSS, JavaScript</p><br>
+                    <p>Framework: Jquery, Bootstrap, React, Tailwind CSS.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h2>Experience</h2>
+                    <p>12/2022 - 03/2023</p><br>
+                    <p>INTERN - TMA SOLUTIONS BINH DINH</p><br>
+                    <p>- I am trained in Git, Angular, Tailwind, ,Jira. </p> <br>
+                        <p>- Take courses on information security, part development
+                        process, soft skills</p><br>
+                       <p>- Be involved in the company's project</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-user-graduate"></i>
+                    <h2>Education</h2>
+                    <p>08/2019 -
+                        07/2023</p><br>
+                        <p>DONG A UNIVERSITY</p><br>
+                        <p>Software Technology</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- project -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/pic1.jpg" alt="">
+                    <div class="layer">
+                        <h3>KingFood Website</h3>
+                        <p>Design and build a responsive KingFood web UI using HTML,
+                            CSS, and JavaScript</p>
+                        <a href="https://king-food.vercel.app/">
+                            <i class="fas fa-retweet"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/pic2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>Design and build a ¦le management website using react,
+                            bootstrap</p>
+                        <a href="https://ui-wed-cloudy.vercel.app/">
+                            <i class="fas fa-retweet"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/pic3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Real-Estate Landing Page</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque quasi, quo eius ipsam
+                            quos unde adipisci possimus? Saepe quisquam corrupti dolorem modi delectus minima
+                            dignissimos est soluta voluptas! Blanditiis.</p>
+                        <a href="#">
+                            <i class="fas fa-retweet"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="far fa-envelope"></i> huy2801.it@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> 0789789440</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Huỳnh Ngọc Huy - CV.pdf" download="" class="btn btn2"><i class="fas fa-download"></i> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fas fa-heart"></i> by Huynh Ngoc Huy</p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+
+</html>
